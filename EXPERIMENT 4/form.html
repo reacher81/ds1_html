@@ -10,9 +10,9 @@
 <body>
     <fieldset>
 
-        <form action="#" name="Ayush" target="_self" method="get">
+        <form action="./response.html" name="Ayush" target="_self" method="get">
             <label for="name">Username:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
             <br>  <!-- for next line-->
             <br>  <!-- for one line space-->
 
@@ -52,6 +52,29 @@
                 <option value="Python">Python</option>
                 <option value="Java">JAVA</option>
             </select>
+            <br><br>
+
+            <label for="tel">Phone: </label>
+            <input type="tel" name="tel" id="tel">
+            <br><br>
+            <label for="add">Adress</label>
+            <textarea name="add" id="add"></textarea>
+            <br><br>
+            <label for="attmpt">Attempt: </label>
+            <input type="number" name="attmpt" id="attmpt">
+            <br><br>
+            <label for="file">choose file:</label>
+            <input type="file">
+            <br><br>
+
+            <label for="url">Homepage:</label>
+            <input type="url" name="url" id="url">
+
+            <label>only letter:</label>
+            <input type="text" name="letters" pattern="[A-Za-z]+" required>
+
+                <input type="submit" value="submit form">
+                <input type="reset" value="reset form">
 
             
 
